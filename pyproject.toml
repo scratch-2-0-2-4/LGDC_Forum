@@ -4,10 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lgdc_forum"
-version = "0.0.1"
-description = "Un module Python pour interagir avec le forum LGDC"
-readme = "README.md"
+version = "0.0.2"
+description = "Un module Python pour interagir avec l'API du forum LGDC"
+readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"
 dependencies = [
     "requests",
 ]
+
+[project.urls]
+"Homepage" = "https://github.com/scratch-2-0-2-4/LGDC_Forum"
+"Bug Tracker" = "https://github.com/scratch-2-0-2-4/LGDC_Forum/issues"
