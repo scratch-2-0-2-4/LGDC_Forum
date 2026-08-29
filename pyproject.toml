@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lgdc_forum"
+version = "0.0.1"
+description = "Un module Python pour interagir avec le forum LGDC"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+]
