@@ -11,7 +11,7 @@ pip install lgdc-forum
 ``` Python
 lf.login(token=VOTRE_TOKEN, user_id=VOTRE_ID_UTILISATEUR")
 ```
-ou
+##### ou
 ``` Python
 lf.login() # Anonyme, ne peux pas poster de messages.
 ```
