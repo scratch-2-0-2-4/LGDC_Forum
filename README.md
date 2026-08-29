@@ -22,7 +22,7 @@ lf.login() # Anonyme, ne peux pas poster de messages.
 ### Poster des messages
 
 >[!CAUTION]
->NE PAS UTILISER À DES FINS DE SPAM SOUS PEINE DE SANCTION !
+> **NE PAS UTILISER À DES FINS DE SPAM SOUS PEINE DE SANCTION !**
 
 #### Poster dans une discussion déjà existante
 
