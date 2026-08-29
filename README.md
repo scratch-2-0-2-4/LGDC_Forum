@@ -16,6 +16,7 @@ session.create_discussion(titre, contenu, tag_ids=[X, X]) # X = id des tags / so
 
 <details>
 <summary>Info sur les tags</summary>
+ 
 | ID | Nom de la catégorie | Type | Usage dans `tag_ids` |
 | :--- | :--- | :--- | :--- |
 | **1** | Annonces | Principale | `[1]` |
@@ -48,6 +49,7 @@ session.create_discussion(titre, contenu, tag_ids=[X, X]) # X = id des tags / so
 | **33** | Aide | Principale | `[33]` |
 | **34** | SPAM | Principale | `[34]` |
 | **35** | Thiago Social / Thiago Social 2 | **Sous-catégorie** | `[16, 35]` |
+
 </details>
 
 
