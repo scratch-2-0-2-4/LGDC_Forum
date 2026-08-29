@@ -1,14 +1,30 @@
+# LGDC-Forum
+
+### Installation 
+
 ``` Bash
 pip install lgdc-forum
 ```
 
+### Connexion
+
 ``` Python
 lf.login(token=VOTRE_TOKEN, user_id=VOTRE_ID_UTILISATEUR")
 ```
+ou
+``` Python
+lf.login() # Anonyme, ne peux pas poster de messages.
+```
+
+### Poster des messages
+
+#### Poster dans une discussion déjà existante
 
 ``` Python
 session.post(contnu, id_de_la_discussion)
 ```
+
+#### Créer une nouvelle discussion
 
 ``` Python
 session.create_discussion(titre, contenu, tag_ids=[X, X]) # X = id des tags / sous-tags
@@ -61,15 +77,20 @@ session.create_discussion(titre, contenu, tag_ids=[9, 10, 16])
 </details>
 
 
+### Obtenir le nom à partir de l'ID
+
 ``` Python
 session.get_username(ID)
 ```
-: Obtient le nom d'utilisateur (pseudo) à partir de son ID.
- 
+
+### Obtenir les groupes de l'utilisateur à partir de son ID
+
 ``` Python
 session.get_user_groups(ID)
 ```
 : Renvoie la liste des rôles et groupes d'un utilisateur.
+
+###
 
 ``` Python
 session.get_tags()
