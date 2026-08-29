@@ -90,12 +90,8 @@ session.get_user_groups(ID)
 ```
 : Renvoie la liste des rôles et groupes d'un utilisateur.
 
-###
+### Obtenir TOUS les tags disponnibles
 
 ``` Python
 session.get_tags()
 ```
-: Liste l'ensemble des catégories (tags) disponibles sur le forum.session.get_subcategories(parent_tag_id) : Renvoie uniquement les sous-catégories d'un tag parent spécifique.
-
-
-session.get_user_data(target_user_id) : Récupère les données brutes JSON de l'API pour un utilisateur.
