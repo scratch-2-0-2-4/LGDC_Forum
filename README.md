@@ -50,6 +50,14 @@ session.create_discussion(titre, contenu, tag_ids=[X, X]) # X = id des tags / so
 | **34** | SPAM | Principale | `[34]` |
 | **35** | Thiago Social / Thiago Social 2 | **Sous-catégorie** | `[16, 35]` |
 
+Exemple :
+
+Pour faire une discussion dans "date de sortie d'un livre : sous catégorie de LGDC" et dans "informatique", vous codez :
+
+``` Python
+session.create_discussion(titre, contenu, tag_ids=[9, 10, 16])
+```
+
 </details>
 
 
