@@ -9,7 +9,7 @@ pip install lgdc-forum
 ### Connexion
 
 ``` Python
-lf.login(token=VOTRE_TOKEN, user_id=VOTRE_ID_UTILISATEUR")
+lf.login(token="VOTRE_TOKEN", user_id="VOTRE_ID_UTILISATEUR")
 ```
 
 > [!WARNING]
