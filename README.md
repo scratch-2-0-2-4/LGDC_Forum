@@ -27,13 +27,13 @@ lf.login() # Anonyme, ne peux pas poster de messages.
 #### Poster dans une discussion déjà existante
 
 ``` Python
-session.post(contnu, id_de_la_discussion)
+session.post("contenu", id_de_la_discussion)
 ```
 
 #### Créer une nouvelle discussion
 
 ``` Python
-session.create_discussion(titre, contenu, tag_ids=[X, X]) # X = id des tags / sous-tags
+session.create_discussion("titre", "contenu", tag_ids=[X, X]) # X = id des tags / sous-tags
 ```
 
 <details>
@@ -77,7 +77,7 @@ Exemple :
 Pour faire une discussion dans "date de sortie d'un livre : sous catégorie de LGDC" et dans "informatique", vous codez :
 
 ``` Python
-session.create_discussion(titre, contenu, tag_ids=[9, 10, 16])
+session.create_discussion("titre", "contenu", tag_ids=[9, 10, 16])
 ```
 
 </details>
