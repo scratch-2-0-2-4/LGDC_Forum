@@ -1,3 +1,21 @@
+``` Bash
+pip install lgdc-forum
+```
+
+``` Python
+lf.login(token=VOTRE_TOKEN, user_id=VOTRE_ID_UTILISATEUR")
+```
+
+``` Python
+session.post(contnu, id_de_la_discussion)
+```
+
+``` Python
+session.create_discussion(titre, contenu, tag_ids=[X, X]) # X = id des tags / sous-tags
+```
+
+<details>
+<summary>Info sur les tags</summary>
 | ID | Nom de la catégorie | Type | Usage dans `tag_ids` |
 | :--- | :--- | :--- | :--- |
 | **1** | Annonces | Principale | `[1]` |
@@ -30,3 +48,23 @@
 | **33** | Aide | Principale | `[33]` |
 | **34** | SPAM | Principale | `[34]` |
 | **35** | Thiago Social / Thiago Social 2 | **Sous-catégorie** | `[16, 35]` |
+</details>
+
+
+``` Python
+session.get_username(ID)
+```
+: Obtient le nom d'utilisateur (pseudo) à partir de son ID.
+ 
+``` Python
+session.get_user_groups(ID)
+```
+: Renvoie la liste des rôles et groupes d'un utilisateur.
+
+``` Python
+session.get_tags()
+```
+: Liste l'ensemble des catégories (tags) disponibles sur le forum.session.get_subcategories(parent_tag_id) : Renvoie uniquement les sous-catégories d'un tag parent spécifique.
+
+
+session.get_user_data(target_user_id) : Récupère les données brutes JSON de l'API pour un utilisateur.
