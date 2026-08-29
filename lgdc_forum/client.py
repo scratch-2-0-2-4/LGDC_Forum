@@ -37,7 +37,7 @@ class ForumSession:
         return response.status_code == 201
 
     def create_discussion(self, title: str, content: str, tag_ids: list[str | int] = None):
-        """Crée un nouveau sujet de discussion (avec ou sans catégories/sous-catégories)."""
+        """Crée un nouveau sujet de discussion."""
         if not self.api_token or not self.user_id:
             raise ValueError("Jeton d'authentification requis pour créer une discussion.")
 
@@ -106,7 +106,7 @@ class ForumSession:
         return groups
 
     def get_tags(self):
-        """Récupère toutes les catégories (tags) du forum avec leur parenté."""
+        """Récupère toutes les catégories (tags) du forum."""
         response = requests.get(f"{self.api_url}/tags", headers=self._get_headers())
         if response.status_code != 200:
             return []
@@ -124,6 +124,6 @@ class ForumSession:
         return tags
 
     def get_subcategories(self, parent_tag_id: str | int):
-        """Récupère uniquement les sous-catégories associées à un tag parent."""
+        """Récupère les sous-catégories associées à un tag parent."""
         all_tags = self.get_tags()
         return [t for t in all_tags if str(t["parent_id"]) == str(parent_tag_id)]
