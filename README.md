@@ -101,3 +101,5 @@ session.get_user_groups(ID)
 ``` Python
 session.get_tags()
 ```
+
+![](https://badgen.net/#github/license/scratch-2-0-2-4/lgdc_forum)
