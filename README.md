@@ -9,14 +9,14 @@ pip install lgdc-forum
 ### Connexion
 
 ``` Python
-lf.login(token="VOTRE_TOKEN", user_id="VOTRE_ID_UTILISATEUR")
+session = lf.login(token="VOTRE_TOKEN", user_id="VOTRE_ID_UTILISATEUR")
 ```
 
 > [!WARNING]
 > Ne montrez **JAMAIS**, à **QUI QUE CE SOIT** votre token.
 ##### ou
 ``` Python
-lf.login() # Anonyme, ne peux pas poster de messages.
+session = lf.login() # Anonyme, ne peux pas poster de messages.
 ```
 
 ### Poster des messages
