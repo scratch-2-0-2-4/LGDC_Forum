@@ -1,3 +1,4 @@
+LICENSE
 README.md
 pyproject.toml
 lgdc_forum/__init__.py

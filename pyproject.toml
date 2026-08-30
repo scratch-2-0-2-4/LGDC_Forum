@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lgdc_forum"
-version = "0.0.7"
+version = "0.0.8"
 description = "Un module Python pour interagir avec l'API de LGDC Forum"
 readme = { file = "README.md", content-type = "text/markdown" }
-license = "MIT"
+license = { text = "MIT" }
 requires-python = ">=3.8"
 dependencies = [
     "requests",
