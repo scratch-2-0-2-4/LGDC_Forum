@@ -102,4 +102,4 @@ session.get_user_groups(ID)
 session.get_tags()
 ```
 
-![](https://badgen.net/github/license/scratch-2-0-2-4/lgdc_forum?icon=PyPi) ![](https://badgen.net/pypi/v/lgdc_forum)
+![](https://badgen.net/github/license/scratch-2-0-2-4/lgdc_forum?icon=PyPi) ![](https://badgen.net/pypi/v/LGDC-Forum)
