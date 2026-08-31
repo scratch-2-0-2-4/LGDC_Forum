@@ -676,40 +676,40 @@
 
 <h1 id="lgdc_forum-documentation">LGDC_Forum (documentation)</h1>
 <h3 id="installation">Installation</h3>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>lgdc-forum
-</code></pre></div>
+<div class="language-Bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>lgdc-forum
+</span></code></pre></div>
 <h3 id="connexion">Connexion</h3>
-<div class="highlight"><pre><span></span><code><span class="n">session</span> <span class="o">=</span> <span class="n">lf</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s2">&quot;VOTRE_TOKEN&quot;</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="s2">&quot;VOTRE_ID_UTILISATEUR&quot;</span><span class="p">)</span>
-</code></pre></div>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">session</span> <span class="o">=</span> <span class="n">lf</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s2">&quot;VOTRE_TOKEN&quot;</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="s2">&quot;VOTRE_ID_UTILISATEUR&quot;</span><span class="p">)</span>
+</span></code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Attention !</p>
 <p>Ne partagez <strong>JAMAIS</strong> votre token.</p>
 </div>
 <h5 id="ou">ou</h5>
-<div class="highlight"><pre><span></span><code><span class="n">session</span> <span class="o">=</span> <span class="n">lf</span><span class="o">.</span><span class="n">login</span><span class="p">()</span> <span class="c1"># Anonyme, ne peux pas poster de messages.</span>
-</code></pre></div>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">session</span> <span class="o">=</span> <span class="n">lf</span><span class="o">.</span><span class="n">login</span><span class="p">()</span> <span class="c1"># Anonyme, ne peux pas poster de messages.</span>
+</span></code></pre></div>
 <h3 id="poster-des-messages">Poster des messages</h3>
 <div class="admonition warning">
 <p class="admonition-title">Attention !</p>
 <p><strong>NE PAS UTILISER À DES FINS DE SPAM SOUS PEINE DE SANCTION !</strong></p>
 </div>
 <h4 id="poster-dans-une-discussion-deja-existante">Poster dans une discussion déjà existante</h4>
-<div class="highlight"><pre><span></span><code><span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;contenu&quot;</span><span class="p">,</span> <span class="n">id_de_la_discussion</span><span class="p">)</span>
-</code></pre></div>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;contenu&quot;</span><span class="p">,</span> <span class="n">id_de_la_discussion</span><span class="p">)</span>
+</span></code></pre></div>
 <h4 id="creer-une-nouvelle-discussion">Créer une nouvelle discussion</h4>
-<div class="highlight"><pre><span></span><code><span class="n">session</span><span class="o">.</span><span class="n">create_discussion</span><span class="p">(</span><span class="s2">&quot;titre&quot;</span><span class="p">,</span> <span class="s2">&quot;contenu&quot;</span><span class="p">,</span> <span class="n">tag_ids</span><span class="o">=</span><span class="p">[</span><span class="n">X</span><span class="p">,</span> <span class="n">X</span><span class="p">])</span> <span class="c1"># X = id des tags / sous-tags</span>
-</code></pre></div>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">session</span><span class="o">.</span><span class="n">create_discussion</span><span class="p">(</span><span class="s2">&quot;titre&quot;</span><span class="p">,</span> <span class="s2">&quot;contenu&quot;</span><span class="p">,</span> <span class="n">tag_ids</span><span class="o">=</span><span class="p">[</span><span class="n">X</span><span class="p">,</span> <span class="n">X</span><span class="p">])</span> <span class="c1"># X = id des tags / sous-tags</span>
+</span></code></pre></div>
 <p><a href="/#info-sur-les-tags">Info sur les tags</a></p>
 <h3 id="obtenir-le-nom-a-partir-de-lid">Obtenir le nom à partir de l'ID</h3>
-<div class="highlight"><pre><span></span><code><span class="n">session</span><span class="o">.</span><span class="n">get_username</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span>
-</code></pre></div>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">session</span><span class="o">.</span><span class="n">get_username</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span>
+</span></code></pre></div>
 <h3 id="obtenir-les-groupes-de-lutilisateur-a-partir-de-son-id">Obtenir les groupes de l'utilisateur à partir de son ID</h3>
-<p><div class="highlight"><pre><span></span><code><span class="n">session</span><span class="o">.</span><span class="n">get_user_groups</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span>
-</code></pre></div>
+<p><div class="language-Python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">session</span><span class="o">.</span><span class="n">get_user_groups</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span>
+</span></code></pre></div>
 : Renvoie la liste des rôles et groupes d'un utilisateur.</p>
 <h3 id="obtenir-tous-les-tags-disponnibles">Obtenir TOUS les tags disponnibles</h3>
-<div class="highlight"><pre><span></span><code><span class="n">session</span><span class="o">.</span><span class="n">get_tags</span><span class="p">()</span>
-</code></pre></div>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">session</span><span class="o">.</span><span class="n">get_tags</span><span class="p">()</span>
+</span></code></pre></div>
 <p><img alt="" src="https://badgen.net/github/license/scratch-2-0-2-4/lgdc_forum?icon=PyPi" /> <img alt="" src="https://badgen.net/pypi/v/LGDC-Forum" /></p>
 <hr>
 
@@ -908,8 +908,8 @@
 </table>
 <p>Exemple :</p>
 <p>Pour faire une discussion dans "date de sortie d'un livre : sous catégorie de LGDC" et dans "informatique", vous codez :</p>
-<div class="highlight"><pre><span></span><code><span class="n">session</span><span class="o">.</span><span class="n">create_discussion</span><span class="p">(</span><span class="s2">&quot;titre&quot;</span><span class="p">,</span> <span class="s2">&quot;contenu&quot;</span><span class="p">,</span> <span class="n">tag_ids</span><span class="o">=</span><span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">16</span><span class="p">])</span>
-</code></pre></div>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">session</span><span class="o">.</span><span class="n">create_discussion</span><span class="p">(</span><span class="s2">&quot;titre&quot;</span><span class="p">,</span> <span class="s2">&quot;contenu&quot;</span><span class="p">,</span> <span class="n">tag_ids</span><span class="o">=</span><span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">16</span><span class="p">])</span>
+</span></code></pre></div>
 <hr>
 
 
@@ -966,7 +966,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
