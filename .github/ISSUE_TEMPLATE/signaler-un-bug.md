@@ -1,24 +1,64 @@
 ---
 name: Signaler un bug
 about: Signaler des bugs nous permet d'améliorer LGDC Forum
-title: "[BUG]"
+title: "[BUG]: "
 labels: bug
 assignees: ''
 type: Bug
 
 ---
 
-**Décrivez le bug**
-Une petite description du bug
 
-**Qu'attendez-vous de nous ?**
-Que peux-t-on faire pour vous aider ?
+body:
+  - type: textarea
+    attributes:
+      label: Description du bug
+      description: Plus il y a de détails, plus vite nous pourrons trouver le bug !
+      placeholder: Je ne peux pas envoyer de messages depuis le module python.
+    validations:
+      required: true
 
-**Appareil :**
-[iPhone12, Galaxy S23...]
 
-**Version de l'OS :**
-[iOS 26, Android 16...]
+  - type: textarea
+    attributes:
+      label: Qu'attendez-vous de nous ?
+      description: Que peux-t-on faire pour vous aider ?
+      placeholder: Que je puisse envoyer des messages depuis le module python.
+    validations:
+      required: true
 
-**Captures d'écran**
-Des captures d'écran peuvent nous aider à comprendre le problème (utilisez le 📎 plus bas)
+
+  - type: input
+    attributes:
+      label: Appareil
+      description: Sur quel appareil avez-vous rencontré ce bug ?
+      placeholder: iPhone12, Galaxy S23...
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Version de l'OS
+      description: Paramètres (du Téléphone) -> À propos (Android)/Général (Apple)
+      placeholder: iOS 26, Android 15...
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Vous utilisez
+      description: Vous avez utilisé LGDC Forum depuis...
+      options:
+        - Site
+        - PWA
+        - Module python
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Capture(s) d'écran"
+      description: Cela permettra une résolution encore plus rapide du bug
+      placeholder: Des captures d'écran peuvent nous aider à comprendre le problème (utilisez le 📎 plus bas)
+    validations:
+      required: false
