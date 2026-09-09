@@ -50,7 +50,7 @@ body:
 
   - type: textarea
     attributes:
-      label: "Capture(s) d'écran"
+      label: 'Capture(s) d''écran'
       description: "Cela permettra une résolution encore plus rapide du bug"
       placeholder: "Des captures d'écran peuvent nous aider à comprendre le problème"
     validations:
