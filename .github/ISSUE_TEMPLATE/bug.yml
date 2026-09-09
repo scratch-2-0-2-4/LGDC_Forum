@@ -23,22 +23,6 @@ body:
       required: true
 
 
-  - type: input
-    attributes:
-      label: Appareil
-      description: Sur quel appareil avez-vous rencontré ce bug ?
-      placeholder: iPhone12, Galaxy S23...
-    validations:
-      required: true
-
-  - type: input
-    attributes:
-      label: Version de l'OS
-      description: Paramètres (du Téléphone) -> À propos (Android)/Général (Apple)
-      placeholder: iOS 26, Android 15...
-    validations:
-      required: true
-
   - type: dropdown
     attributes:
       label: Vous utilisez
@@ -50,10 +34,26 @@ body:
     validations:
       required: true
 
+  - type: input
+    attributes:
+      label: Appareil/Navigateur
+      description: Décrivez votre appareil et/ou navigateur (ex. iPhone 12 + Safari, Windows 11 + Chrome, etc.)
+      placeholder: iPhone 12, Galaxy S23, Windows 11 + Chrome...
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Version du système
+      description: Version de l'OS ou du navigateur
+      placeholder: iOS 16, Android 15, Chrome 120...
+    validations:
+      required: true
+
   - type: textarea
     attributes:
       label: "Capture(s) d'écran"
       description: Cela permettra une résolution encore plus rapide du bug
-      placeholder: Des captures d'écran peuvent nous aider à comprendre le problème (utilisez le 📎 plus bas)
+      placeholder: Des captures d'écran peuvent nous aider à comprendre le problème
     validations:
       required: false
