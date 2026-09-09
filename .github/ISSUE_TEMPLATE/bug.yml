@@ -1,12 +1,8 @@
----
 name: Signaler un bug
 about: Signaler des bugs nous permet d'améliorer LGDC Forum
 title: "[BUG]: "
 labels: bug
 type: Bug
-
----
-
 
 body:
   - type: textarea
