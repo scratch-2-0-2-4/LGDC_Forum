@@ -3,7 +3,6 @@ name: Signaler un bug
 about: Signaler des bugs nous permet d'améliorer LGDC Forum
 title: "[BUG]: "
 labels: bug
-assignees: ''
 type: Bug
 
 ---
