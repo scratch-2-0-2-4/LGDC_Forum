@@ -1,32 +1,30 @@
 name: Signaler un bug
 about: Signaler des bugs nous permet d'améliorer LGDC Forum
 title: "[BUG]: "
-labels: bug
-type: Bug
 
 body:
   - type: textarea
     attributes:
-      label: Description du bug
-      description: Plus il y a de détails, plus vite nous pourrons trouver le bug !
-      placeholder: Je ne peux pas envoyer de messages depuis le module python.
+      label: "Description du bug"
+      description: "Plus il y a de détails, plus vite nous pourrons trouver le bug !"
+      placeholder: "Je ne peux pas envoyer de messages depuis le module python."
     validations:
       required: true
 
 
   - type: textarea
     attributes:
-      label: Qu'attendez-vous de nous ?
-      description: Que peux-t-on faire pour vous aider ?
-      placeholder: Que je puisse envoyer des messages depuis le module python.
+      label: "Qu'attendez-vous de nous ?"
+      description: "Que peux-t-on faire pour vous aider ?"
+      placeholder: "Que je puisse envoyer des messages depuis le module python."
     validations:
       required: true
 
 
   - type: dropdown
     attributes:
-      label: Vous utilisez
-      description: Vous avez utilisé LGDC Forum depuis...
+      label: "Style de LGDC Forum"
+      description: "Vous avez utilisé LGDC Forum depuis..."
       options:
         - Site
         - PWA
@@ -36,24 +34,24 @@ body:
 
   - type: input
     attributes:
-      label: Appareil/Navigateur
-      description: Décrivez votre appareil et/ou navigateur (ex. iPhone 12 + Safari, Windows 11 + Chrome, etc.)
-      placeholder: iPhone 12, Galaxy S23, Windows 11 + Chrome...
+      label: "Appareil/Navigateur"
+      description: "Décrivez votre appareil et/ou navigateur"
+      placeholder: "iPhone 12, Galaxy S23, Chrome, Windows..."
     validations:
       required: true
 
   - type: input
     attributes:
-      label: Version du système
-      description: Version de l'OS ou du navigateur
-      placeholder: iOS 16, Android 15, Chrome 120...
+      label: "Version du système"
+      description: "Version de l'OS ou du navigateur"
+      placeholder: "iOS 16, Android 15, Chrome 120..."
     validations:
       required: true
 
   - type: textarea
     attributes:
       label: "Capture(s) d'écran"
-      description: Cela permettra une résolution encore plus rapide du bug
-      placeholder: Des captures d'écran peuvent nous aider à comprendre le problème
+      description: "Cela permettra une résolution encore plus rapide du bug"
+      placeholder: "Des captures d'écran peuvent nous aider à comprendre le problème"
     validations:
       required: false
